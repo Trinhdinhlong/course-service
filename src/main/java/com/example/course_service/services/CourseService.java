@@ -15,7 +15,11 @@ public class CourseService {
     private final CourseRepository courseRepository;
 
     public List<Course> getAllCourses() {
+        for(Course course : courseRepository.findAll()) {
+            System.out.printf("Course ID: %d\n",course.getId());
+        }
         return courseRepository.findAll();
+
     }
 
     public List<Course> getByCategory(Long categoryId) {

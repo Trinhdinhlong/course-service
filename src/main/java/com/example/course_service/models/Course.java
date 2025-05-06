@@ -32,7 +32,7 @@ public class Course {
     @Column(name = "created_at")
     private Timestamp createdAt;
 
-    // Getters and Setters
+
 }
 
 
